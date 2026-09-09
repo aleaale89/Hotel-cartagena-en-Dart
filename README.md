@@ -13,3 +13,6 @@ feat: crear menu de consola
 test: agregar pruebas de reservas
 
 docs: actualizar README
+
+
+Equipo:
