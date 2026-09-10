@@ -60,30 +60,8 @@ Hotel-cartagena-en-Dart/
 - **Check-Out:** Solo procede en habitaciones con estado `ocupada`. Al realizarse, se cierra la reserva activa y la habitación retorna a `disponible`.
 - **Validación de entradas:** No se permiten entradas vacías ni tipos numéricos inválidos en consola.
 
-## 6. Casos de Prueba Mínimos
-| ID | Caso | Entrada | Resultado Esperado |
-|---|---|---|---|
-| T01 | Registrar usuario nuevo | Usuario inexistente | Registro exitoso |
-| T02 | Registrar usuario duplicado | Mismo usuario dos veces | Rechazado con excepción |
-| T03 | Login correcto | Usuario y contraseña válidos | Acceso permitido |
-| T04 | Login incorrecto | Contraseña errada | Acceso denegado |
-| T05 | Reserva correcta | Habitación disponible, días > 0 | Reserva creada y estado reservada |
-| T06 | Reserva inexistente | Número que no existe | Operación rechazada |
-| T07 | Reserva no disponible | Habitación reservada u ocupada | Operación rechazada |
-| T08 | Check-in correcto | Reserva existente y personas <= capacidad | Estado ocupada |
-| T09 | Check-in excede capacidad | Personas > capacidad | Operación rechazada |
-| T10 | Check-out correcto | Habitación ocupada | Estado disponible |
-| T11 | Check-out incorrecto | Habitación disponible | Operación rechazada |
-| T12 | Entrada vacía | Texto en blanco / enter | Re-solicitud interactiva del dato |
-
 ## 7. Integrantes
 Alejandra bermudez, eduard tordecilla, angi torres, gustavo gonzales.
-
-### Responsabilidades por Integrante:
-- **Integrante 1:** Modelos y enumeraciones (`models/`, `enums/`).
-- **Integrantes 2 y 3:** Lógica de negocio y reglas de hotel (`services/hotel.dart`).
-- **Integrante 4 (Alejandra):** Interfaz de consola, captura de datos, navegación y experiencia de usuario (`lib/sistema_hotel.dart`, `bin/main.dart`).
-- **Integrante 5:** Pruebas automatizadas, control de calidad y validaciones (`test/hotel_test.dart`).
 
 ## 8. Dificultades Encontradas y Soluciones
 - *(Completar durante el desarrollo y sustentación del proyecto).*
